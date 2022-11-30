@@ -35,7 +35,7 @@ Simulations can be run as:
 - `python dataset_generator.py 'Toy'` or 
 - `python dataset_generator.py 'Real'`
 
-The simulation will produce a csv file named 'Measurements_All_Pressures.csv' in the respective directories. We have provided these output files from already generated scenarios for a period of 3 months each.
+The simulation will produce a csv file named 'Measurements_All_Pressures.csv' in the respective directories. 
 
 ## Training and Evaluation
 
@@ -56,9 +56,9 @@ Models can be trained using the `python run.py`. A number of arguments can be pa
 - --latent_dim:       latent dimension; default is 96.
 ```
 
-Both training and evaluation requires the model '.inp' file and the dataset '.csv' file with pressure values. The model '.inp' files for both Toy and Real demand patterns are included in the repository and can also be downloaded from https://github.com/KIOS-Research/BattLeDIM. Both files need to be placed in respective directories i.e. (networks/L-Town/Toy or networks/L-Town/Real).
+Both training and evaluation require the model '.inp' file and the dataset '.csv' file with pressure values. The model '.inp' files for both Toy and Real demand patterns can be downloaded from https://github.com/KIOS-Research/BattLeDIM. Both files need to be placed in respective directories i.e. (networks/L-Town/Toy or networks/L-Town/Real).
 
-Already trained models can be found in the directory 'trained_models'. These can be readily used for evaluation using run.py by specifying the 'evaluate' mode and 'model_path'.
+Trained models can be used for evaluation using run.py by specifying the 'evaluate' mode and 'model_path'.
 
 ## Citation
 ### Preprint:
@@ -87,7 +87,7 @@ Already trained models can be found in the directory 'trained_models'. These can
 ```
 
 
-## Acknowledgements
+## Acknowledgments
 We gratefully acknowledge funding from the European
 Research Council (ERC) under the ERC Synergy Grant Water-Futures (Grant
 agreement No. 951424). This research was also supported by the research training
