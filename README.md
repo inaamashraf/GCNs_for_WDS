@@ -1,3 +1,5 @@
+![](m_GCN.png)
+
 # Spatial Graph Convolution Neural Networks for Water Distribution Systems
 
 Official Code for the paper "Spatial Graph Convolution Neural Networks for Water Distribution Systems" (under submission, preprint available at arXiv: https://arxiv.org/abs/2211.09587).
