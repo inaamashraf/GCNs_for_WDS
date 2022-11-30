@@ -1,0 +1,69 @@
+Comments:
+  - Configuration file for Toy Dataset Generation
+
+times:
+  StartTime: 2018-01-01 00:00
+  EndTime: 2018-03-31 23:55
+
+pressure_sensors:
+- n1
+- n4
+- n31
+- n54
+- n105
+- n114
+- n163
+- n188
+- n215
+- n229
+- n288
+- n296
+- n332
+- n342
+- n410
+- n415
+- n429
+- n458
+- n469
+- n495
+- n506
+- n516
+- n519
+- n549
+- n613
+- n636
+- n644
+- n679
+- n722
+- n726
+- n740
+- n752
+- n769
+
+flow_sensors:
+- p227
+- p235
+
+level_sensors:
+- #
+#- []
+
+amrs:
+- # 
+#- []
+
+pressure_sensor_limits:
+  min: 0 
+  max: 80
+ 
+flow_sensor_limits:
+  min:  
+  max: 
+  
+level_sensor_limits:
+  min: 0 
+  max: 100
+
+amrs_sensor_limits:
+  min: 
+  max: 
