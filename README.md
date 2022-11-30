@@ -45,9 +45,9 @@ Models can be trained using the `python run.py`. A number of arguments can be pa
 - --warm_start:       specify True if you want to further train a partially trained model. model_path must also be specified; default is False. 
 - --model_path:       specify model path in case of re-training or evaluation; default is None.
 - --model:            m_GCN (our model) or ChebNet (model from Hajgato et al.); default is m_GCN.
-- n_days:             number of days of data to be used for training; default is 30 days.
+- --n_days:           number of days of data to be used for training; default is 30 days.
 - --batch_size:       mini-batch size used for training; default is 48.
-- -- n_epochs:        number of epochs of training; default is 5000.
+- --n_epochs:         number of epochs of training; default is 5000.
 - --lr:               learning rate; default is 1e-4.
 - --decay:            weight decay for Adam Optimizer; defaults is 0.
 - --n_aggr:           number of GCN layers; default is 45.
@@ -70,7 +70,7 @@ Trained models can be used for evaluation using run.py by specifying the 'evalua
   month         = nov,
   archiveprefix = {arXiv},
   eprint        = {2211.09587},
-  copyright = {Creative Commons Attribution Share Alike 4.0 International}
+  copyright     = {Creative Commons Attribution Share Alike 4.0 International}
 }
 ```
 ### Repository:
