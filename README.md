@@ -1,3 +1,5 @@
+![](m_GCN.png)
+
 # Spatial Graph Convolution Neural Networks for Water Distribution Systems
 
 Official Code for the paper "Spatial Graph Convolution Neural Networks for Water Distribution Systems" (under submission, preprint available at arXiv: https://arxiv.org/abs/2211.09587).
@@ -64,7 +66,7 @@ Trained models can be used for evaluation using run.py by specifying the 'evalua
 ### Preprint:
 ```
 @misc{ashraf2022gcn_wds,
-  author        = {Ashraf, Inaam and Hermes, Luca and Artelt, Andr{\"{e}} and Hammer, Barbara},
+  author        = {Ashraf, Inaam and Hermes, Luca and Artelt, Andr{\'{e}} and Hammer, Barbara},
   title         = {Spatial Graph Convolution Neural Networks for Water Distribution Systems},
   year          = {2022},
   month         = nov,
