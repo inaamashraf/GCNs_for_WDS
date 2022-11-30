@@ -68,7 +68,7 @@ class ChebNet(torch.nn.Module):
     def __init__(self, in_dim, out_dim, latent_dim, K):
         super(ChebNet, self).__init__()
         self.conv1 = ChebConv(in_dim, latent_dim, K=K)
-        self.conv2 = ChebConv(120, 60, K=120)
+        self.conv2 = ChebConv(latent_dim, 60, K=120)
         self.conv3 = ChebConv(60, 30, K=20)
         self.conv4 = ChebConv(30, out_dim, K=1, bias=False)
 

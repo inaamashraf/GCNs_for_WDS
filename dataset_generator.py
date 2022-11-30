@@ -54,7 +54,7 @@ class LeakDatasetCreator:
         self.wn = wntr.network.WaterNetworkModel(inp_file)
         self.wn.options.hydraulic.demand_model = Mode_Simulation
 
-        self.nodes = self.wn.get_graph().nodes()
+        self.nodes = self.wn.to_graph().nodes()
         self.links = self.wn.link_name_list
 
         for name, node in self.wn.junctions():
@@ -129,14 +129,17 @@ if __name__ == '__main__':
     if len(sys.argv) != 2:
         print("Usage: < demand_type: Toy or Real >")
     else:
-        sys.argv[1] = 'Toy'
 
-        scenario_dir = os.path.join(os.getcwd(), "network", "L-Town", sys.argv[1])
+        scenario_dir = os.path.join(os.getcwd(), "networks", "L-Town", sys.argv[1])
         if not os.path.isdir(scenario_dir):
-            os.system('mkdir ' + os.path.join(os.getcwd(), "network"))
-            os.system('mkdir ' + os.path.join(os.getcwd(), "network", "L-Town"))
-            os.system('mkdir ' + os.path.join(os.getcwd(), "network", "L-Town", sys.argv[1]))
-        inp_file = os.path.join(scenario_dir, "L-Town.inp")
+            os.system('mkdir ' + os.path.join(os.getcwd(), "networks"))
+            os.system('mkdir ' + os.path.join(os.getcwd(), "networks", "L-Town"))
+            os.system('mkdir ' + os.path.join(os.getcwd(), "networks", "L-Town", sys.argv[1]))
+        
+        if sys.argv[1] == 'Toy':
+            inp_file = os.path.join(scenario_dir, "L-TOWN.inp")
+        elif sys.argv[1] == 'Real':
+            inp_file = os.path.join(scenario_dir, "L-TOWN_Real.inp")
 
         t = time.time()
 

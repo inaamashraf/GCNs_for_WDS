@@ -38,7 +38,7 @@ def create_cli_parser():
                         type    = int,
                         help    = "mini-batch size used for training; default is 48.")
     parser.add_argument('--n_epochs',
-                        default = '250',
+                        default = '5000',
                         type    = int,
                         help    = "number of epochs of training; default is 5000.")    
     parser.add_argument('--lr',

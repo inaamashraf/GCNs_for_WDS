@@ -143,7 +143,7 @@ def create_graph(inp_file, path_to_data, PRVS=True):
         Loading pressure values as node features and changing the 
         sampling frequency to every 15 mins from every 5 mins. 
     """     
-    scenario = WaterFutureScenario(path_to_data, all=True)        
+    scenario = WaterFutureScenario(path_to_data)        
     X_df = scenario.get_pressures()
     resample_idx = range(0, X_df.shape[0], 3)
     X = torch.zeros(len(resample_idx), n_nodes, 1, dtype=torch.float32)
@@ -246,7 +246,7 @@ class WDN_Dataset_IM(InMemoryDataset):
         return Y
 
 
-def load_dataset(X, n_nodes, installed_sensors, edge_indices, edge_attr, mask_data):
+def load_dataset(X, n_nodes, installed_sensors, edge_indices, edge_attr):
     """ 
         Creating and loading the dataset.
     """
@@ -255,7 +255,7 @@ def load_dataset(X, n_nodes, installed_sensors, edge_indices, edge_attr, mask_da
 
     dataset = WDN_Dataset_IM()
     dataset._data_list = np.arange(X.shape[0])
-    Y = dataset.load(X, mask, edge_indices, edge_attr, mask_data)    
+    Y = dataset.load(X, mask, edge_indices, edge_attr)    
     return dataset, Y  
     
 
