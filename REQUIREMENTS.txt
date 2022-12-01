@@ -1,0 +1,13 @@
+## Requirements and dependencies
+
+This code has been implemented in Pytorch with the following package versions:
+
+python:             3.10.8 
+pytorch:            1.13.0 
+CUDA:               11.6
+pytorch_geometric:  2.1.0.post1
+pandas:             1.5.1
+matplotlib:         3.5.3
+wntr:               0.5.0
+networkx:           2.8.8
+tqdm:               4.64.1

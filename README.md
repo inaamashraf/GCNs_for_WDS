@@ -4,25 +4,6 @@
 
 Official Code for the paper "Spatial Graph Convolution Neural Networks for Water Distribution Systems" (under submission, preprint available at arXiv: https://arxiv.org/abs/2211.09587).
 
-## Requirements and dependencies
-
-This code has been implemented in Pytorch with the following Pytorch and Python versions (however, it should also work for newer versions):
-```
-Python:     3.10.8 
-Pytorch:    1.13.0 
-CUDA:       11.6
-```
-
-Other required packages are as follows:
-```
-- pandas                conda install pandas or pip install pandas
-- matplotlib            conda install matplotlib or python -m pip install -U matplotlib
-- wntr                  https://wntr.readthedocs.io/en/latest/installation.html
-- pytorch geometric:    https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html 
-- networkx              https://networkx.org/documentation/stable/install.html
-- tqdm                  pip install tqdm
-```
-
 ## Simulating scenarios to generate data
 
 Pressure data for all nodes in the WDS can be generated for longer periods of time (Vrachimis et al. https://github.com/KIOS-Research/BattLeDIM). Two types of demands can be used for this purpose:
@@ -78,13 +59,13 @@ Trained models can be used for evaluation using run.py by specifying the 'evalua
 ### Repository:
 ```
 @misc{GCNs_for_WDS,
-  author        = {Ashraf, Inaam and Hermes, Luca and Artelt, Andr{\"{e}} and Hammer, Barbara},
+  author        = {Ashraf, Inaam and Hermes, Luca and Artelt, Andr{\'{e}} and Hammer, Barbara},
   title         = {{GCNs_for_WDS}},
   year          = {2022},
   publisher     = {GitHub}
   journal       = {GitHub repository},
   organization  = {CITEC, Bielefeld University, Germany},
-  howpublished  = {\url{https://github.com/}},
+  howpublished  = {\url{https://github.com/inaamashraf/GCNs_for_WDS}},
 }
 ```
 
