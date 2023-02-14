@@ -39,7 +39,7 @@ Models can be trained using the `python run.py`. A number of arguments can be pa
 - --latent_dim:       latent dimension; default is 96.
 ```
 
-Both training and evaluation require the model '.inp' file and the dataset '.csv' file with pressure values. The model '.inp' files for both Toy and Real demand patterns can be downloaded from https://github.com/KIOS-Research/BattLeDIM. Both files need to be placed in respective directories i.e. (networks/L-Town/Toy or networks/L-Town/Real).
+Both training and evaluation require the model '.inp' file and the dataset '.csv' file with pressure values. The model '.inp' file for Toy demand patterns is provided in the respective directory, while the '.inp' file for demand patterns can be downloaded from https://github.com/KIOS-Research/BattLeDIM. Both files need to be placed in respective directories i.e. (networks/L-Town/Toy or networks/L-Town/Real).
 
 Trained models can be used for evaluation using run.py by specifying the 'evaluate' mode and 'model_path'.
 
