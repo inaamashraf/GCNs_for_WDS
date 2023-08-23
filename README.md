@@ -2,7 +2,8 @@
 
 # Spatial Graph Convolution Neural Networks for Water Distribution Systems
 
-Official Code for the paper "Spatial Graph Convolution Neural Networks for Water Distribution Systems" (under submission, preprint available at arXiv: https://arxiv.org/abs/2211.09587).
+Official Code for the paper "Spatial Graph Convolution Neural Networks for Water Distribution Systems" published at the International Symposium on Intelligent Data Analysis 2023: https://link.springer.com/chapter/10.1007/978-3-031-30047-9_3
+(preprint available at arXiv: https://arxiv.org/abs/2211.09587).
 
 ## Simulating scenarios to generate data
 
@@ -44,17 +45,20 @@ Both training and evaluation require the model '.inp' file and the dataset '.csv
 Trained models can be used for evaluation using run.py by specifying the 'evaluate' mode and 'model_path'.
 
 ## Citation
-### Preprint:
+### Conference Paper:
 ```
-@misc{ashraf2022gcn_wds,
-  author        = {Ashraf, Inaam and Hermes, Luca and Artelt, Andr{\'{e}} and Hammer, Barbara},
-  title         = {Spatial Graph Convolution Neural Networks for Water Distribution Systems},
-  year          = {2022},
-  month         = nov,
-  archiveprefix = {arXiv},
-  eprint        = {2211.09587},
-  copyright     = {Creative Commons Attribution Share Alike 4.0 International}
+@InProceedings{10.1007/978-3-031-30047-9_3,
+  author="Ashraf, Inaam and Hermes, Luca and Artelt, Andr{\'e} and Hammer, Barbara",
+  editor="Cr{\'e}milleux, Bruno and Hess, Sibylle and Nijssen, Siegfried",
+  title="Spatial Graph Convolution Neural Networks for Water Distribution Systems",
+  booktitle="Advances in Intelligent Data Analysis XXI",
+  year="2023",
+  publisher="Springer Nature Switzerland",
+  address="Cham",
+  pages="29--41",
+  isbn="978-3-031-30047-9"
 }
+
 ```
 ### Repository:
 ```
@@ -71,10 +75,5 @@ Trained models can be used for evaluation using run.py by specifying the 'evalua
 
 
 ## Acknowledgments
-We gratefully acknowledge funding from the European
-Research Council (ERC) under the ERC Synergy Grant Water-Futures (Grant
-agreement No. 951424). This research was also supported by the research training
-group “Dataninja” (Trustworthy AI for Seamless Problem Solving: Next Generation Intelligence Joins Robust Data Analysis) funded by the German federal
-state of North Rhine-Westphalia, and by funding from the VW-Foundation for
-the project IMPACT funded in the frame of the funding line AI and its Implications for Future Society.
+We gratefully acknowledge funding from the European Research Council (ERC) under the ERC Synergy Grant Water-Futures (Grant agreement No. 951424). This research was also supported by the research training group “Dataninja” (Trustworthy AI for Seamless Problem Solving: Next Generation Intelligence Joins Robust Data Analysis) funded by the German federal state of North Rhine-Westphalia, and by funding from the VW-Foundation for the project IMPACT funded in the frame of the funding line AI and its Implications for Future Society.
  
